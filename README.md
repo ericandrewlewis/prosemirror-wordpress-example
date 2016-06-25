@@ -1,5 +1,7 @@
 # WordPress ProseMirror Example
 
+![Alt text](/screenshot.gif?raw=true "Screenshot")
+
 This plugin is an example of how to use a [ProseMirror](http://prosemirror.net) editor in a WordPress project.
 
 The plugin will create a meta box on the Edit Post page with an editor instance which saves to post meta.
