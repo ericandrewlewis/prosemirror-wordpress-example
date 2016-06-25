@@ -38,7 +38,7 @@ function wpep_register_meta_boxes() {
 function wpep_output_metabox_contents( $post ) {
   wp_nonce_field( 'wpep_prosemirror_field', 'wpep_prosemirror_field_nonce' );
   echo '<div id="prosemirror-editor"></div>';
-  echo '<input type="hidden" name="prosemirror-editor-content" value="' . esc_attr( get_post_meta( $post->ID, 'prosemirror-editor-content', true ) ) . '"></div>';
+  echo '<input type="hidden" name="prosemirror-editor-content" value="' . esc_attr( get_post_meta( $post->ID, 'prosemirror-editor-content', true ) ) . '">';
 }
 
 add_action( 'save_post', 'wpep_save_metabox' );
