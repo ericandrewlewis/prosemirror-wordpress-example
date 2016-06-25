@@ -11,8 +11,16 @@ define( 'WPEP_VERSION', '0.1' );
 
 function wpep_add_prosemirror_css() {
   echo '<style>
-  #prosemirror-editor { border: 1px solid silver;}
-  .ProseMirror-content { padding: 0 5px; }</style>';
+  .ProseMirror {
+    border: 1px solid silver;
+  }
+  .ProseMirror-content {
+    padding: 0 5px;
+  }
+  .ProseMirror li {
+   list-style: square;
+  }
+  </style>';
 }
 add_action( 'admin_head-post.php', 'wpep_add_prosemirror_css' );
 add_action( 'admin_head-post-new.php', 'wpep_add_prosemirror_css' );
