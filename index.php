@@ -32,7 +32,7 @@ add_action( 'admin_enqueue_scripts', 'wpep_enqueue_scripts' );
 add_action( 'add_meta_boxes', 'wpep_register_meta_boxes' );
 
 function wpep_register_meta_boxes() {
-  add_meta_box( 'meta-box-id', __( 'A Metabox with a ProseMirror editor', 'textdomain' ), 'wpep_output_metabox_contents', 'post' );
+  add_meta_box( 'meta-box-id', __( 'A Metabox with a ProseMirror editor', 'textdomain' ), 'wpep_output_metabox_contents', 'post', 'normal' );
 }
 
 function wpep_output_metabox_contents( $post ) {
